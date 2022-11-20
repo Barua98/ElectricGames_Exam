@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesAPi/ElectricGamesAPi.csproj": {}
+    "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesApi/ElectricGamesAPi.csproj": {}
   },
   "projects": {
-    "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesAPi/ElectricGamesAPi.csproj": {
+    "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesApi/ElectricGamesAPi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesAPi/ElectricGamesAPi.csproj",
+        "projectUniqueName": "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesApi/ElectricGamesAPi.csproj",
         "projectName": "ElectricGamesAPi",
-        "projectPath": "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesAPi/ElectricGamesAPi.csproj",
+        "projectPath": "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesApi/ElectricGamesAPi.csproj",
         "packagesPath": "/Users/ronybarua/.nuget/packages/",
-        "outputPath": "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesAPi/obj/",
+        "outputPath": "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ronybarua/.nuget/NuGet/NuGet.Config"
