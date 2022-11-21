@@ -1,6 +1,6 @@
 namespace ElectricGamesApi.Interfaces;
 using ElectricGamesApi.Interfaces;
-interface IGameCharacters : IGames{
+interface IGameCharacter : IGame{
 
     int Id {get; set;}
     string Name {get; set;}
