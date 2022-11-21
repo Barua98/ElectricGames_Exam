@@ -1,1 +1,12 @@
 namespace ElectricGamesApi.Interfaces; 
+using ElectricGamesApi.Interfaces;
+
+interface IGames {
+    int Id {get; set;}
+    string Title {get; set;}
+    string Image {get; set;}
+    string Description {get; set;}
+    string Platform {get; set;}
+    int ReleaseYear {get; set;}
+
+}
