@@ -1,5 +1,4 @@
 namespace ElectricGamesApi.Interfaces; 
-using ElectricGamesApi.Interfaces;
 
 interface IGame {
     int Id {get; set;}
