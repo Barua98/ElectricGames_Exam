@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 namespace ElectricGamesApi.Models; 
 
 
-public class GameCharacters : IGameCharacter
+public class GameCharacter : IGameCharacter
 {
     [Key]
     public int Id {get; set;}
