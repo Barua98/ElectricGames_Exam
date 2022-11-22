@@ -1,4 +1,4 @@
-/* using Microsoft.AspNetCore.Mvc; 
+using Microsoft.AspNetCore.Mvc; 
 using Microsoft.EntityFrameworkCore; 
 using ElectricGamesApi.Contexts; 
 using ElectricGamesApi.Models; 
@@ -32,4 +32,3 @@ public class GameController : ControllerBase
     }
 
 }
-*/
