@@ -3,7 +3,7 @@ import axios from "axios";
 const ElectricGamesService = (() => {
 
     const electricGamesEndpoints = {
-        games: "https://localhost:7016",
+        games: "https://localhost:7016/game",
         gameCharacters: "https://localhost:7016"
     }
 
