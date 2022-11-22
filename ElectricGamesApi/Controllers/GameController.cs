@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc; 
+/* using Microsoft.AspNetCore.Mvc; 
 using Microsoft.EntityFrameworkCore; 
 using ElectricGamesApi.Contexts; 
 using ElectricGamesApi.Models; 
@@ -22,8 +22,8 @@ public class GameController : ControllerBase
     {
         try
         {
-           List<Game> games = await context.Game.ToListAsync(); 
-           return Ok(games); 
+            List<Game> games = await context.Game.ToListAsync(); 
+            return Ok(games); 
         }
         catch
         {
@@ -32,3 +32,4 @@ public class GameController : ControllerBase
     }
 
 }
+*/
