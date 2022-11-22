@@ -7,7 +7,6 @@ namespace ElectricGamesApi.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-
 public class GameController : ControllerBase
 {
     private readonly GameContext context;
