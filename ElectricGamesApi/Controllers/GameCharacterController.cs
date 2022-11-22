@@ -8,22 +8,22 @@ namespace ElectricGamesApi.Controllers;
 [ApiController]
 [Route("[controller]")]
 
-public class GameController : ControllerBase
+public class GameCharacterController : ControllerBase
 {
     private readonly GameContext context;
 
-    public GameController(GameContext _context)
+    public GameCharacterController(GameContext _context)
     {
         context = _context; 
     }
 
     [HttpGet]
-    public async Task<ActionResult<List<Game>>> Get()
+    public async Task<ActionResult<List<GameCharacter>>> Get()
     {
         try
         {
-            List<Game> games = await context.Game.ToListAsync(); 
-            return Ok(games); 
+            List<GameCharacter> gameCharacters = await context.GameCharacter.ToListAsync(); 
+            return Ok(gameCharacters); 
         }
         catch
         {
@@ -31,6 +31,4 @@ public class GameController : ControllerBase
         }
     }
 
-
-    
 }

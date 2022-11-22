@@ -4,7 +4,7 @@ const ElectricGamesService = (() => {
 
     const electricGamesEndpoints = {
         games: "https://localhost:7016/game",
-        gameCharacters: "https://localhost:7016"
+        gameCharacters: "https://localhost:7016/gameCharacter"
     }
 
     const getAllGames = async () => {
