@@ -1395,19 +1395,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/ronybarua/.nuget/packages/": {}
+    "C:\\Users\\trymm\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesApi/ElectricGamesApi.csproj",
+      "projectUniqueName": "C:\\Users\\trymm\\OneDrive\\Desktop\\Eksamen-WU\\ElectricGames_Exam\\ElectricGamesApi\\ElectricGamesApi.csproj",
       "projectName": "ElectricGamesApi",
-      "projectPath": "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesApi/ElectricGamesApi.csproj",
-      "packagesPath": "/Users/ronybarua/.nuget/packages/",
-      "outputPath": "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesApi/obj/",
+      "projectPath": "C:\\Users\\trymm\\OneDrive\\Desktop\\Eksamen-WU\\ElectricGames_Exam\\ElectricGamesApi\\ElectricGamesApi.csproj",
+      "packagesPath": "C:\\Users\\trymm\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\trymm\\OneDrive\\Desktop\\Eksamen-WU\\ElectricGames_Exam\\ElectricGamesApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/ronybarua/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\trymm\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -1459,7 +1459,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
