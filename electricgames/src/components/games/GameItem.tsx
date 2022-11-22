@@ -1,3 +1,4 @@
+import IGames from "../../interfaces/IGames";
 
 const GameItem = () => {
 

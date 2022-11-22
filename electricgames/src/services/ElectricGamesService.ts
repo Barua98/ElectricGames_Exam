@@ -17,9 +17,15 @@ const ElectricGamesService = (() => {
         return result.data;
     }
 
+    const deleteGame = async (id: number) => {
+        const result = await axios.delete(`${electricGamesEndpoints.games}/${id}`);
+        console.log(result);
+    }
+
     return{
         getAllGames,
-        getAllGameCharacters
+        getAllGameCharacters,
+        deleteGame
     }
 
 })();
