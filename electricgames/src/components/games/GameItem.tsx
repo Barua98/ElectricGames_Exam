@@ -1,6 +1,6 @@
 import IGames from "../../interfaces/IGames";
 
-const GameItem = () => {
+const GameItem = ({id, title, } : IGames) => {
 
     return(
         <section>
