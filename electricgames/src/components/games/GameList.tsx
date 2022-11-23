@@ -8,7 +8,10 @@ const GameList = () => {
 
     const {games} = useContext(GameContext) as IGameContext;
 
+
     const getGameItem = () => {
+
+
         return games.map( (game, i) => (
             <GameItem
                 key={`game-${i}`}
@@ -18,7 +21,6 @@ const GameList = () => {
                 description={game.description}
                 platform={game.platform}
                 releaseYear={game.releaseYear}
-
             />
         ));
     }
@@ -26,9 +28,9 @@ const GameList = () => {
     return(
         <section>
             <h3>See all games</h3>
-            <section>
+            <article>
                 {getGameItem()}
-            </section>
+            </article>
         </section>
     )
 

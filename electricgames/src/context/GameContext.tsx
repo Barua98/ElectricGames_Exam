@@ -20,6 +20,7 @@ const GameProvider = ({children} : Props) => {
     const getGamesFromService = async () => {
         const gamesFromService = await ElectricGamesService.getAllGames();
         setGames( gamesFromService );
+        console.log(games)
     }
 
     const deleteGameById = async (id: number) => {
