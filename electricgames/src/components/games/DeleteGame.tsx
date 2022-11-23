@@ -18,13 +18,13 @@ const DeleteGame = () => {
     return(
         <section>
             <h3>Delete a game</h3>
-            <p>Antall spill i databasen: {games.length}</p>
+            <p>Amount of game in database: {games.length}</p>
 
             <div>
-                <label>Skriv inn ID på spillet som skal slettes: </label>
+                <label>Write in the ID for det game you want to delete:  </label>
                 <input value={id} onChange={handleChange} type="number" />
             </div>
-            <button onClick={deleteGame} className="btn btn-warning">Slett ordre</button>
+            <button onClick={deleteGame} className="btn btn-warning">Delete game</button>
         </section>
     )
 

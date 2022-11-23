@@ -11,21 +11,25 @@ const ElectricGamesService = (() => {
         const result = await axios.get(electricGamesEndpoints.games);
         return result.data;
     }
+    const deleteGame = async (id: number) => {
+        const result = await axios.delete(`${electricGamesEndpoints.games}/${id}`);
+        console.log(result); 
+    }
 
     const getAllGameCharacters = async () => {
         const result = await axios.get(electricGamesEndpoints.gameCharacters);
-        return result.data;
+        return result.data 
     }
-
-    const deleteGame = async (id: number) => {
+    const deleteGameCharacter = async(id:number) => {
         const result = await axios.delete(`${electricGamesEndpoints.games}/${id}`);
-        console.log(result);
+        console.log(result); 
     }
 
     return{
         getAllGames,
+        deleteGame,
         getAllGameCharacters,
-        deleteGame
+        deleteGameCharacter
     }
 
 })();

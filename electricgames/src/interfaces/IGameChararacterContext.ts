@@ -2,8 +2,8 @@ import IGameCharacter from "./IGameCharacter"
 
 
 interface IGameCharacterContext {
-    games: IGameCharacter[];
+    gameCharacters: IGameCharacter[];
     deleteCharacterById: (id: number) => void; 
 }
 
-export default IGameCharacter; 
+export default IGameCharacterContext; 
