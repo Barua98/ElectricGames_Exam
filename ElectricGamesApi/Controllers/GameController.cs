@@ -30,6 +30,27 @@ public class GameController : ControllerBase
         }
     }
 
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(int id)
+    {
+        try 
+        {
+            Game? gameToDelete = await context.Game.FindAsync(id); 
 
-    
+            if(gameToDelete != null)
+            {
+                context.Remove(gameToDelete);
+                await context.SaveChangesAsync();
+                return NoContent();
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+        catch
+        {
+            return StatusCode(500);
+        }
+    }
 }
