@@ -21,12 +21,42 @@ public class GameController : ControllerBase
     {
         try
         {
-            List<Game> games = await context.Game.Take(10).ToListAsync(); 
+            List<Game> games = await context.Game.ToListAsync(); 
             return Ok(games); 
         }
         catch
         {
             return StatusCode(500); 
+        }
+    }
+
+    [HttpGet("{id}")]
+    public async Task<ActionResult<Game>> Get(int id)
+    {
+        Game? game = await context.Game.FindAsync(id);
+
+        if(game != null)
+        {
+            return Ok(game);
+        }
+        else 
+        {
+            return NotFound(500); 
+        }
+    }
+
+    [HttpGet("{title}")]
+    public async Task<ActionResult<Game>> Get(string title)
+    {
+        Game? game = await context.Game.FindAsync(title);
+
+        if(game != null)
+        {
+            return Ok(game);
+        }
+        else 
+        {
+            return NotFound(500); 
         }
     }
 
