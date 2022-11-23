@@ -21,7 +21,7 @@ public class GameController : ControllerBase
     {
         try
         {
-            List<Game> games = await context.Game.ToListAsync(); 
+            List<Game> games = await context.Game.Take(10).ToListAsync(); 
             return Ok(games); 
         }
         catch
