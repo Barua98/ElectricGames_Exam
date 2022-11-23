@@ -148,3 +148,6 @@ C:/Users/trymm/OneDrive/Desktop/Eksamen-WU/ElectricGames_Exam/ElectricGamesApi/o
 C:/Users/trymm/OneDrive/Desktop/Eksamen-WU/ElectricGames_Exam/ElectricGamesApi/obj/Debug/net6.0/ElectricGamesApi.pdb
 C:/Users/trymm/OneDrive/Desktop/Eksamen-WU/ElectricGames_Exam/ElectricGamesApi/obj/Debug/net6.0/ElectricGamesApi.genruntimeconfig.cache
 C:/Users/trymm/OneDrive/Desktop/Eksamen-WU/ElectricGames_Exam/ElectricGamesApi/obj/Debug/net6.0/ref/ElectricGamesApi.dll
+C:\Users\trymm\OneDrive\Desktop\Eksamen-WU\ElectricGames_Exam\ElectricGamesApi\obj\Debug\net6.0\ElectricGamesApi.dll
+C:\Users\trymm\OneDrive\Desktop\Eksamen-WU\ElectricGames_Exam\ElectricGamesApi\obj\Debug\net6.0\refint\ElectricGamesApi.dll
+C:\Users\trymm\OneDrive\Desktop\Eksamen-WU\ElectricGames_Exam\ElectricGamesApi\obj\Debug\net6.0\ElectricGamesApi.pdb

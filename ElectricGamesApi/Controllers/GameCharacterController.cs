@@ -32,13 +32,13 @@ public class GameCharacterController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult<List<GameCharacter>>> Get()
+    public async Task<ActionResult<GameCharacter>> Get(int id)
     {
         GameCharacter? gameCharacter =  await context.GameCharacter.FindAsync(id); 
 
         if( gameCharacter!= null)
         {
-            return ok(gameCharacter);
+            return Ok(gameCharacter);
         }
         else
         {
