@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+HdVIOWhU7PLNg25mgq1zoPZMIYFix9mf/cTg8BLTQc=",
+  "Hash": "ODJihg1BWmBWi/WaJzJ/No9UfJP3hXOoHqwg0aYIa4A=",
   "Source": "ElectricGamesApi",
   "BasePath": "_content/ElectricGamesApi",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "ElectricGamesApi/wwwroot",
+      "Name": "ElectricGamesApi\\wwwroot",
       "Source": "ElectricGamesApi",
-      "ContentRoot": "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesApi/wwwroot/",
+      "ContentRoot": "C:\\Users\\trymm\\OneDrive\\Desktop\\Eksamen-WU\\ElectricGames_Exam\\ElectricGamesApi\\wwwroot\\",
       "BasePath": "_content/ElectricGamesApi",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesApi/wwwroot/index.html",
+      "Identity": "C:\\Users\\trymm\\OneDrive\\Desktop\\Eksamen-WU\\ElectricGames_Exam\\ElectricGamesApi\\wwwroot\\index.html",
       "SourceId": "ElectricGamesApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesApi/wwwroot/",
+      "ContentRoot": "C:\\Users\\trymm\\OneDrive\\Desktop\\Eksamen-WU\\ElectricGames_Exam\\ElectricGamesApi\\wwwroot\\",
       "BasePath": "_content/ElectricGamesApi",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -31,7 +31,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/index.html"
+      "OriginalItemSpec": "wwwroot\\index.html"
     }
   ]
 }

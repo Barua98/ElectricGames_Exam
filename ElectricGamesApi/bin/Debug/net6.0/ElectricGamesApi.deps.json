@@ -9,6 +9,7 @@
       "ElectricGamesApi/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Sqlite": "7.0.0",
+          "Microsoft.EntityFrameworkCore.Analyzers": "7.0.0",
           "Microsoft.EntityFrameworkCore.Design": "7.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
