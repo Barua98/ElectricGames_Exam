@@ -4,15 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import GameProvider from './context/GameContext';
+import GameCharacterProvider from './context/GameCharacterContext';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <GameProvider>
-      <App />
-    </GameProvider>
+    <GameCharacterProvider>
+      <GameProvider>
+        <App />
+      </GameProvider>
+    </GameCharacterProvider>
   </React.StrictMode>
 );
 
