@@ -5,6 +5,7 @@ const DeleteGamePage = () => {
 
     return(
         <section>
+            <DeleteGame/>
             <GameList/>
         </section>
     )
