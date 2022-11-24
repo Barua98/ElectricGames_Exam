@@ -49,7 +49,6 @@ public class GameCharacterController : ControllerBase
         }
     }
     //HTTP get by name
-
     [HttpGet]
     [Route("[action]/{name}")]
     public async Task<ActionResult<List<GameCharacter>>> GetByName(string name)
