@@ -11,4 +11,3 @@ public class GameContext : DbContext{
     public DbSet<Game> Game {get; set;}
     public DbSet<GameCharacter> GameCharacter {get; set;}
 }
-
