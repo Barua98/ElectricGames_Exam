@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HEQM8fOfWoF3pithhkJVvYxUp+edznVeRqvlUw0YgSY=",
+  "Hash": "k23Wm6FTiYrFeM5rx1oQ76WmuZxTVmMjffVRjpGxLYU=",
   "Source": "ElectricGamesApi",
   "BasePath": "_content/ElectricGamesApi",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "ElectricGamesApi\\wwwroot",
+      "Name": "ElectricGamesApi/wwwroot",
       "Source": "ElectricGamesApi",
-      "ContentRoot": "C:\\Users\\trymm\\OneDrive\\Desktop\\Eksamen-WU\\ElectricGames_Exam\\ElectricGamesApi\\wwwroot\\",
+      "ContentRoot": "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesApi/wwwroot/",
       "BasePath": "_content/ElectricGamesApi",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\trymm\\OneDrive\\Desktop\\Eksamen-WU\\ElectricGames_Exam\\ElectricGamesApi\\wwwroot\\images\\blackOps1.jpg",
+      "Identity": "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesApi/wwwroot/images/blackOps1.jpg",
       "SourceId": "ElectricGamesApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\trymm\\OneDrive\\Desktop\\Eksamen-WU\\ElectricGames_Exam\\ElectricGamesApi\\wwwroot\\",
+      "ContentRoot": "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesApi/wwwroot/",
       "BasePath": "_content/ElectricGamesApi",
       "RelativePath": "images/blackOps1.jpg",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\blackOps1.jpg"
+      "OriginalItemSpec": "wwwroot/images/blackOps1.jpg"
     },
     {
-      "Identity": "C:\\Users\\trymm\\OneDrive\\Desktop\\Eksamen-WU\\ElectricGames_Exam\\ElectricGamesApi\\wwwroot\\images\\godOfWar.jpg",
+      "Identity": "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesApi/wwwroot/images/godOfWar.jpg",
       "SourceId": "ElectricGamesApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\trymm\\OneDrive\\Desktop\\Eksamen-WU\\ElectricGames_Exam\\ElectricGamesApi\\wwwroot\\",
+      "ContentRoot": "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesApi/wwwroot/",
       "BasePath": "_content/ElectricGamesApi",
       "RelativePath": "images/godOfWar.jpg",
       "AssetKind": "All",
@@ -48,13 +48,30 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\godOfWar.jpg"
+      "OriginalItemSpec": "wwwroot/images/godOfWar.jpg"
     },
     {
-      "Identity": "C:\\Users\\trymm\\OneDrive\\Desktop\\Eksamen-WU\\ElectricGames_Exam\\ElectricGamesApi\\wwwroot\\images\\marioKart8.webp",
+      "Identity": "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesApi/wwwroot/images/halo3.jpg",
       "SourceId": "ElectricGamesApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\trymm\\OneDrive\\Desktop\\Eksamen-WU\\ElectricGames_Exam\\ElectricGamesApi\\wwwroot\\",
+      "ContentRoot": "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesApi/wwwroot/",
+      "BasePath": "_content/ElectricGamesApi",
+      "RelativePath": "images/halo3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/halo3.jpg"
+    },
+    {
+      "Identity": "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesApi/wwwroot/images/marioKart8.webp",
+      "SourceId": "ElectricGamesApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesApi/wwwroot/",
       "BasePath": "_content/ElectricGamesApi",
       "RelativePath": "images/marioKart8.webp",
       "AssetKind": "All",
@@ -65,13 +82,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\marioKart8.webp"
+      "OriginalItemSpec": "wwwroot/images/marioKart8.webp"
     },
     {
-      "Identity": "C:\\Users\\trymm\\OneDrive\\Desktop\\Eksamen-WU\\ElectricGames_Exam\\ElectricGamesApi\\wwwroot\\images\\spiderMan.jpg",
+      "Identity": "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesApi/wwwroot/images/spiderMan.jpg",
       "SourceId": "ElectricGamesApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\trymm\\OneDrive\\Desktop\\Eksamen-WU\\ElectricGames_Exam\\ElectricGamesApi\\wwwroot\\",
+      "ContentRoot": "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesApi/wwwroot/",
       "BasePath": "_content/ElectricGamesApi",
       "RelativePath": "images/spiderMan.jpg",
       "AssetKind": "All",
@@ -82,13 +99,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\spiderMan.jpg"
+      "OriginalItemSpec": "wwwroot/images/spiderMan.jpg"
     },
     {
-      "Identity": "C:\\Users\\trymm\\OneDrive\\Desktop\\Eksamen-WU\\ElectricGames_Exam\\ElectricGamesApi\\wwwroot\\index.html",
+      "Identity": "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesApi/wwwroot/index.html",
       "SourceId": "ElectricGamesApi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\trymm\\OneDrive\\Desktop\\Eksamen-WU\\ElectricGames_Exam\\ElectricGamesApi\\wwwroot\\",
+      "ContentRoot": "/Users/ronybarua/Project/Web_Exam/ElectricGames_Exam/ElectricGamesApi/wwwroot/",
       "BasePath": "_content/ElectricGamesApi",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -99,7 +116,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\index.html"
+      "OriginalItemSpec": "wwwroot/index.html"
     }
   ]
 }

@@ -17,7 +17,7 @@ public class GameCharacterController : ControllerBase
         context = _context; 
     }
 
-    //HTTP get all
+    //HTTP get all game character
     [HttpGet]
     public async Task<ActionResult<List<GameCharacter>>> Get()
     {
@@ -64,9 +64,12 @@ public class GameCharacterController : ControllerBase
             return StatusCode(500);
         }
     }
+
+    //HTTP delete by id
+
     [HttpDelete]
     [Route("[action]/{id}")]
-    public async Task<IActionResult> DeleteById(int id)
+    public async Task<IActionResult> Delete(int id)
     {
         try
         {

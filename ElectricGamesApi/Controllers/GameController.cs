@@ -16,6 +16,7 @@ public class GameController : ControllerBase
         context = _context; 
     }
 
+    //HTTP get all games 
     [HttpGet]
     public async Task<ActionResult<List<Game>>> Get()
     {
@@ -29,6 +30,8 @@ public class GameController : ControllerBase
             return StatusCode(500); 
         }
     }
+
+    //HTTP get by id
 
     [HttpGet("{id}")]
     public async Task<ActionResult<Game>> Get(int id)
@@ -45,22 +48,29 @@ public class GameController : ControllerBase
         }
     }
 
-    [HttpGet("{title}")]
-    public async Task<ActionResult<Game>> Get(string title)
-    {
-        Game? game = await context.Game.FindAsync(title);
+    //HTTP get by title
 
-        if(game != null)
+    [HttpGet]
+    [Route("[action]/{title}")]
+    public async Task<ActionResult<List<Game>>> GetByTitle(string title)
+    {
+        try
         {
+            List<Game>? game = await context.Game.Where(game => game.Title.ToLower() == title.ToLower()).ToListAsync();
+
             return Ok(game);
         }
-        else 
+        catch
         {
-            return NotFound(500); 
+            return StatusCode(500); 
         }
+
     }
 
-    [HttpDelete("{id}")]
+    //HTTP delete by id
+
+    [HttpDelete]
+    [Route("[action]/{id}")]
     public async Task<IActionResult> Delete(int id)
     {
         try 
@@ -69,7 +79,7 @@ public class GameController : ControllerBase
 
             if(gameToDelete != null)
             {
-                context.Remove(gameToDelete);
+                context.Game.Remove(gameToDelete);
                 await context.SaveChangesAsync();
                 return NoContent();
             }
