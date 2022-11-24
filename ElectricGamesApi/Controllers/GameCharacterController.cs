@@ -17,6 +17,7 @@ public class GameCharacterController : ControllerBase
         context = _context; 
     }
 
+    //HTTP get all
     [HttpGet]
     public async Task<ActionResult<List<GameCharacter>>> Get()
     {
@@ -30,6 +31,8 @@ public class GameCharacterController : ControllerBase
             return StatusCode(500); 
         }
     }
+
+    //HTTP get by id
 
     [HttpGet("{id}")]
     public async Task<ActionResult<GameCharacter>> Get(int id)
@@ -45,4 +48,20 @@ public class GameCharacterController : ControllerBase
             return NotFound();
         }
     }
+    //HTTP get by name
+
+    [HttpGet]
+    [Route("[action]/{name}")]
+    public async Task<ActionResult<List<GameCharacter>>> GetByName(string name)
+    { 
+        try{
+            List<GameCharacter>? gameCharacters = await context.GameCharacter.Where(character => character.Name.ToLower() == name.ToLower()).ToListAsync();
+
+            return Ok(gameCharacters);
+        }
+        catch{
+            return StatusCode(500);
+        }
+    }
+    
 }
