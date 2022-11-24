@@ -98,13 +98,29 @@ public class GameController : ControllerBase
     [HttpPost]
     public IActionResult Post(Game newGame)
     {
-        try{
+        try
+        {
             context.Game.Add(newGame);
             context.SaveChanges();
             return CreatedAtAction("Get", new {id = newGame.Id}, newGame); 
         }
-        catch{
+        catch
+        {
             return StatusCode(500); 
+        }
+    }
+
+    //Httput edit a game object
+
+    [HttpPut]
+    public IActionResult Put (Game editedGame){
+        try{
+            context.Entry(editedGame).State = EntityState.Modified;
+            context.SaveChanges();
+            return NoContent();
+        }
+        catch{
+            return NotFound(500);
         }
     }
 }

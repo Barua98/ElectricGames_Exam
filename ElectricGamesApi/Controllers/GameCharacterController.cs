@@ -91,4 +91,36 @@ public class GameCharacterController : ControllerBase
             return StatusCode(500); 
         }
     }
+
+    // Httpost new game character
+    [HttpPost]
+    public IActionResult Post (GameCharacter newGameCharacter)
+    {
+        try
+        {
+            context.GameCharacter.Add(newGameCharacter); 
+            context.SaveChanges(); 
+            return CreatedAtAction("Get", new {id = newGameCharacter.Id}, newGameCharacter); 
+        }
+        catch 
+        {
+            return StatusCode(500); 
+        }
+    }
+    
+    // Httpost update a game object 
+    [HttpPut]
+    public IActionResult Put (GameCharacter editedGameCharacter)
+    {
+        try
+        {
+            context.Entry(editedGameCharacter).State = EntityState.Modified;
+            context.SaveChanges();
+            return NoContent();
+        }
+        catch
+        {
+            return StatusCode(500);
+        }
+    }
 }
