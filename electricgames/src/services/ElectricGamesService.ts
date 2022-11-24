@@ -2,10 +2,13 @@ import axios from "axios";
 
 const ElectricGamesService = (() => {
 
+    // endpoint from
     const electricGamesEndpoints = {
         games: "https://localhost:7016/game",
         gameCharacters: "https://localhost:7016/gameCharacter"
     }
+
+     // Game services
 
     const getAllGames = async () => {
         const result = await axios.get(electricGamesEndpoints.games);
@@ -27,6 +30,8 @@ const ElectricGamesService = (() => {
         const result = await axios.delete(`${electricGamesEndpoints.games}/${id}`);
         console.log(result); 
     }
+
+    // Game characters services
 
     const getAllGameCharacters = async () => {
         const result = await axios.get(electricGamesEndpoints.gameCharacters);
