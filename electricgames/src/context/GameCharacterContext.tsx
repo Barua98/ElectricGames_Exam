@@ -29,6 +29,8 @@ const GameCharacterProvider = ({children} : Props) => {
         setGameCharacters(newArray);
     }
 
+    
+
     return (
         <GameCharacterContext.Provider value={{gameCharacters, deleteCharacterById}}>
             {children}
