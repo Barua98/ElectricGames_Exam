@@ -54,14 +54,39 @@ public class GameCharacterController : ControllerBase
     [Route("[action]/{name}")]
     public async Task<ActionResult<List<GameCharacter>>> GetByName(string name)
     { 
-        try{
+        try
+        {
             List<GameCharacter>? gameCharacters = await context.GameCharacter.Where(character => character.Name.ToLower() == name.ToLower()).ToListAsync();
 
             return Ok(gameCharacters);
         }
-        catch{
+        catch
+        {
             return StatusCode(500);
         }
     }
-    
+    [HttpDelete]
+    [Route("[action]/{id}")]
+    public async Task<IActionResult> DeleteById(int id)
+    {
+        try
+        {
+            GameCharacter? gameCharacterToDelete = await context.GameCharacter.FindAsync(id); 
+
+            if(gameCharacterToDelete != null)
+            { 
+                context.GameCharacter.Remove(gameCharacterToDelete); 
+                await context.SaveChangesAsync(); 
+                return NoContent();
+            }
+            else 
+            {
+                return NotFound();
+            }
+        }
+        catch
+        {
+            return StatusCode(500); 
+        }
+    }
 }
