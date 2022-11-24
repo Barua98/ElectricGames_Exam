@@ -93,4 +93,18 @@ public class GameController : ControllerBase
             return StatusCode(500);
         }
     }
+
+    //Http
+    [HttpPost]
+    public IActionResult Post(Game newGame)
+    {
+        try{
+            context.Game.Add(newGame);
+            context.SaveChanges();
+            return CreatedAtAction("Get", new {id = newGame.Id}, newGame); 
+        }
+        catch{
+            return StatusCode(500); 
+        }
+    }
 }
