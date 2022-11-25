@@ -1,5 +1,6 @@
 import IGames from "../../interfaces/IGames";
 
+
 const GameItem = ({id, title, image, description, platform, releaseYear} : IGames) => {
 
     return(
@@ -13,5 +14,4 @@ const GameItem = ({id, title, image, description, platform, releaseYear} : IGame
 
     )
 }
-
 export default GameItem;

@@ -10,6 +10,7 @@ const MainPageHeader = () => {
                 <li><Link to="/search">Search page</Link></li>
                 <li><Link to="/update-games">Update games & characters</Link></li>
                 <li><Link to="/delete-games">Delete games & characters</Link></li>
+                <li><Link to="/add-games">Add a game</Link></li>
             </ul>
 
         </header>

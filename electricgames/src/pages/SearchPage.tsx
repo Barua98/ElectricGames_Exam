@@ -1,3 +1,5 @@
+import GameList from "../components/games/GameList";
+import SearchGameItem from "../components/games/SearchGameItem";
 
 
 const SearchPage = () => {
@@ -6,12 +8,11 @@ const SearchPage = () => {
         <main className="container">
             <div className="row">
                 <div className="col-md-6 warning">
-                    <p>Search by ID: </p>
-                    <p>Search by name: </p>
+                    <SearchGameItem/>
                 </div>
                 
                 <div className="col-md-6 primary">
-                    
+                    <GameList/>
                 </div>
             </div>
         </main>

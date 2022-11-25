@@ -1,4 +1,6 @@
 import axios from "axios";
+import IGameCharacterContext from "../interfaces/IGameChararacterContext";
+import IGames from "../interfaces/IGames";
 
 const ElectricGamesService = (() => {
 
@@ -27,6 +29,10 @@ const ElectricGamesService = (() => {
         const result = await axios.delete(`${electricGamesEndpoints.games}/${id}`);
         console.log(result); 
     }
+    const postGame = async (game: IGames) => {
+        const result = await axios.post(electricGamesEndpoints.games, game)
+        return result.data;
+    }
 
 
 
@@ -47,6 +53,10 @@ const ElectricGamesService = (() => {
         const result = await axios.get(`${electricGamesEndpoints.gameCharacters}/${name}`);
         return result.data;
     }
+    const postCharacter = async (character: IGameCharacterContext) => {
+        const result = await axios.post(electricGamesEndpoints.gameCharacters, character)
+        return result.data;
+    }
 
 
     return{
@@ -57,7 +67,9 @@ const ElectricGamesService = (() => {
         getAllGameCharacters,
         getCharacterById,
         deleteGameCharacter,
-        getCharacterByName
+        getCharacterByName,
+        postGame,
+        postCharacter
     }
 
 })();

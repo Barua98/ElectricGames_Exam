@@ -1,7 +1,7 @@
 import {useState, useContext, ChangeEvent} from "react";
 import {GameContext} from "../../context/GameContext";
 import IGameContext from "../../interfaces/IGameContext";
-
+ 
 const DeleteGame = () => {
 
     const [id, setId] = useState<number>(0);

@@ -29,8 +29,25 @@ const GameProvider = ({children} : Props) => {
         setGames(newArray);
     }
 
+    const getGameById = async (id: number) => {
+        await ElectricGamesService.getGamesById(id);
+        const newArray = games.filter( game => game.id == id);
+        setGames(newArray);
+    }
+
+    const getGameByTitle = async (title: string) => {
+        await ElectricGamesService.getGamesByTitle(title);
+        const newArray = games.filter( game => game.title == title);
+        setGames(newArray);
+    }
+
+    const postGame = async (game: IGames) => {
+        const gamesFromService = await ElectricGamesService.postGame(game);
+        setGames(gamesFromService);
+    }
+
     return (
-        <GameContext.Provider value={{games, deleteGameById}}>
+        <GameContext.Provider value={{games, deleteGameById, postGame, getGameById, getGameByTitle}}>
             {children}
         </GameContext.Provider>
     )

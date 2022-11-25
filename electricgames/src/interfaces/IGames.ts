@@ -1,8 +1,8 @@
 
 interface IGames {
-    id: number;
+    id?: number;
     title: string;
-    image: string;
+    image?: File;
     description: string;
     platform: string;
     releaseYear: number;
