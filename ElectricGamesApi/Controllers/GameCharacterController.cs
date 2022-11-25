@@ -11,6 +11,7 @@ namespace ElectricGamesApi.Controllers;
 public class GameCharacterController : ControllerBase
 {
     private readonly GameContext context;
+    private readonly IWebHostEnvironment hosting; 
 
     public GameCharacterController(GameContext _context)
     {
@@ -94,12 +95,20 @@ public class GameCharacterController : ControllerBase
 
     // Httpost new game character
     [HttpPost]
-    public IActionResult Post (GameCharacter newGameCharacter)
+    public IActionResult Post (GameCharacter newGameCharacter, IFormFile file)
     {
         try
         {
+            string wwwrootPath = hosting.WebRootPath; 
+            string absolutePath = Path.Combine($"{wwwrootPath}/images{file.FileName}");
+
             context.GameCharacter.Add(newGameCharacter); 
             context.SaveChanges(); 
+            
+             using(var fileStream = new FileStream(absolutePath, FileMode.Create))
+            {
+                file.CopyTo(fileStream);
+            }
             return CreatedAtAction("Get", new {id = newGameCharacter.Id}, newGameCharacter); 
         }
         catch 
